@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Septima Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+</script>
+</head>
+ 
+<body onLoad="MM_preloadImages('imagenes/global2.jpg','imagenes/agua2.jpg','imagenes/salvar3.jpg','imagenes/imagen16.jpg','imagenes/imagen9.jpg','imagenes/fuertelorygu.jpg')">
+<div data-role="page" id="Principal" data-theme="c">
+<center>
+     <p1>BATALLA DEL 5 DE MAYO</p1>
+  </center>
+    <div><center> <iframe width="420" height="315" src="https://www.youtube.com/embed/n2b_VcfJLy0" frameborder="0" allowfullscreen></iframe></center>
+  </div>
+<div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>ANTECEDENTES DEL CONFLICTO</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>QUE PERSONAJES PARTICIPARON</h2>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>FECHA DE LA BATALLA</h2>
+      </a>
+    </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>DESARROLLO DE LA CONTIENDA</h2>
+      </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>DONDE SE LLEVO A CABO</h2>
+      </a></li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>CULMINACION DE LA BATALLA</h2>
+      </a>
+      </li>
+       <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>EN LA ACTUALIDAD QUE SON AHORA LOS FUERTES</h2>
+      <p></p>
+      </a>
+   </li>
+   </ul>
+</div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4>Norma Edith Ortega Flores</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>ANTECEDENTES DEL CONFLICTO</h1>
+  </div>
+ <div data-role="content" align="center">
+  <div>
+     <p>En octubre de 1861, Francia, Inglaterra y España suscribieron la Convención de Londres, en la cual se comprometieron a enviar contingentes militares a México ya que este tenía una gran deuda de 80 millones de pesos, aproximadamente eran 69 millones para los ingleses, 9 millones para los españoles y 2 millones para Francia.La alianza tripartita amenazó al presidente Benito Juarez con una invasión inminente si no se saldaba por completo las deudas que México tenía con los tres países europeos.Juarez responde con un exhorto para  lograr un arreglo amistoso, y los invitó a conferenciar. Sin embargo, sabía que había una guerra inminente y trató de proteger la Ciudad de México traladando pertrechos y  ordenó la fortificación de Puebla. Creo al Ejército de Oriente y el hombre que se designó en el mando fue el general Ig</a></p>
+     <p>Ignacio Zaragoza. </p>
+  <img src="imagenes/ignacio.jpg" width="257" height="251">
+     <p>En un principio la Alianza Tripartita aceptó el llamado al diálogo de Benito Juarez y sus representantes se reunieron con Manuel Doblado, ministro de Relaciones Exteriores del gobierno mexicano, quien consiguió que Juan Prim, representante español, y Lord John Russell por Inglaterra se retiraran. A este acuerdo se le conoce como los Tratados Preliminares de la Soledad.El 5 de marzo, cuando aún se realizaban las negociaciones de los Tratados de la Soledad, llegó a Veracruz un contingente militar francés bajo el mando de Charles Ferdinand Latrille, conde de Lorencez.A finales de abril, Lorencez desconoció los Tratados de Soledad y se puso en marcha, junto con sus efectivos, hacia Puebla, con el fin último de conquistar la Ciudad de México.</p>
+  </div>
+ </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4>Norma Edith Ortega Flores</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>PERSONAJES QUE PARTICIPARON</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <ul>
+   <br>
+   <p1>BENITO JUAREZ</p1>
+    <p>Benito Pablo Juárez García, nació en San Pablo Guelatao, Oaxaca un 21 de marzo de 1806, engalanando las filas de la política mexicana dentro del Partido Liberal. Abogado de profesión, ocupo el cargo de Presidente de México en varias ocasiones, en 1858 y posteriormente en 1872. A pasado a la historia como el “Benemérito de las Américas y se le recuerda por la celebre frase: Entre los individuos, como entre las naciones, el respeto al derecho ajeno es la paz.La vida de Benito Juárez, transcurrió durante la época más relevante del país, considerada como la consolidación de la nación como una República.Durante su carrera política, llegó a ocupar importantes cargos como el de Ministro de Justicia e Instrucción Pública, Gobernador de Oaxaca, Ministro de Gobernación y Presidente de la Suprema Corte de Justicia. Fue en 1858, que se convierte en Presidente de la República.Entre los años de 1862 y 1867, sostiene de forma admirable el gobierno mexicano contra conservadores y francés, aun cuando andaba peregrinando entre México y Estados Unidos. Fue en esta época que sucede la Batalla de Puebla, lucha de la cual el Ejército Mexicano sale victorioso comandados por el Gral. Ignacio Zaragoza.</p>
+   <img src="imagenes/benito.jpg" width="250" height="200">
+   <br>
+   <h2>Charles Ferdinand Latrille</h2>
+    <p>Charles Ferdinand Latrille, Comte de Lorencez, nació en París un 23 de mayo de 1814, ingresa a la Escuela Militar Especial de Saint-Cyr en 1830, siendo promovido al puesto en 1832. Su primera encomienda la tiene en Argelia, obteniendo el grado de Coronel en 1852 y luego el de General de Brigada en 1855 durante guerra de Crimea.Su incursión en la historia de México fue en enero de 1862, cuando es enviado a México con refuerzos de L’Herillier y Gambier para la expedición del país. Es promovido General de División el 20 de marzo, tan solo 15 días después de haber llegado a Veracruz; y para el 27 de abril, asumió el mando de todas las tropas francesas en México.Días antes de la Batalla de Puebla, Charles Ferdinand, combatió al Gral. Ignacio Zaragoza en las Cumbres de Acultzingo el18 de abril, para llegar a Orizaba el 20 de abril donde se fortifica a la espera de refuerzos, mismos que nunca llegaron.Fue entonces que el 5 de mayo de 1862, Lorencez se presenta al combate en la ciudad de Puebla con la intención de tomarla, confiado de sus victorias pasadas en Europa. Menospreciando a su enemigo mando un mensaje demasiado arrogante a Napoleón III, en el cual se decía amo de México.Olvidándose de los consejos de los conservadores, Lorencez atacó de forma prematura la ciudad a las tropas mexicanas del Ejército de Oriente al mando de Ignacio Zaragoza, quien rechazó con valentía y coraje los ataques enemigos en tres ocasiones. Todavía en el tercer intento del ejército francés, se desató una tormenta que terminó por arruinar la artillería de Lorencez, quien no teniendo otra salida, se retiró vencido y humillado, por aquellos a quienes había señalado como inferiores.Lorencez hizo un intento por recuperar su honor, cuando Napoleón III manda un nuevo ejército a cargo del mariscal Federico Forey, y pide ser el quien derrote a los mexicanos, pero su petición es rechazada y abandona Veracruz el 17 de diciembre de 1862.</p>
+   <img src="imagenes/charles.jpg" width="250" height="200">
+   <br>
+   <p1>Ignacio Mejia Álvarez</p1>
+    <p>gnacio Mejía Álvarez, nació en Oaxaca el 4 de agosto de 1814. Reconocido militar y político mexicano participó en la Primera Intervención Estadounidense en México, además de la Guerra de Reforma y otras guerras civiles.En su carrera política llego a ocupar cargos de Secretario del Comandante de Armas del Estado de Oaxaca, General Isidro Reyes, en 1832. Para 1846, llegó a ocupar una curul de diputado local. Durante la Guerra de Reforma apoyó a los liberales y al Gobierno de Juárez, a quién había conocido con anterioridad. Asimismo, fue Secretario de Guerra y Marina durante la Presidencia de Benito Juárez.Durante la Segunda Intervención Francesa, fue Jefe de la División Oaxaca y participó en la heroica Batalla de Puebla al lado del Gral. Ignacio Zaragoza, teniendo como trinchera el Fuerte de Guadalupe.Para mayo de 1862 fue designado Gobernador Militar de Puebla, cargo que ocupó hasta marzo de 1863. Posteriormente durante el Sitio de Puebla, acción militar emprendida entre el 16 de marzo y el 17 de mayo de 1863, fue aprehendido y enviado a Franciaen donde estuvo prisionero. Casi un año después, en julio de 1864 logra fugarse y regresa México en octubre de 1865, incorporándose a las fuerzas liberales en Paso del Norte.Murió el 2 de diciembre de 1906, siendo sepultado en el Panteón Francés de la Piedad. Años más tarde, en 1914 se ordenó el traslado de su cuerpo a la Rotonda de las Personas Ilustres de la Ciudad de México, sin embargo, sus restos fueron extraviados al ser exhumados durante la remodelación del lugar.</p>
+   <img src="imagenes/ignacio.jpg" width="250" height="200">
+   <br>
+   <h2>Porfirio Díaz</h2>
+    <p>José de la Cruz Porfirio Díaz Morí, nació en Oaxaca; hijo de José de la Cruz Díaz y Petrona Mori. Huérfano a los tres años, aún niño, trabajó para ayudar a su madre en el sostenimiento del hogar. Estudio de leyes. En 1846 se alistó en la Guardia Nacional para combatir la invasión estadunidense, pero no intervino en la lucha.Simpatizante del Plan de Ayutla, al terminar ese movimiento se le nombró prefecto de Ixtlán. Durante la Guerra de Tres Años combatió al lado de los liberales. Asciende a general de brigada en agosto de 1861. En dicho año fue electo diputado, pero desempeña el cargo muy breve tiempo. Lucha contra la intervención francesa; jefe de una brigada en Acultzingo en abril de 1862.Su participación en la Batalla de Puebla el 5 de mayo se dio al defender el ala izquierda de la ciudad y repeliendo en dos ocasiones el ataque francés. Una vez que huyeron los franceses, González Ortega y Porfirio Díaz se dieron a la tarea de perseguirlos, hasta que Zaragoza se los impidió. Ese mismo día, Juárez recibió una carta de Zaragoza mencionándole los detalles de la batalla, y haciendo hincapié en "el empeño y bizarría del ciudadano general don Porfirio Díaz".
+Sin duda, es un personaje de suma importancia en la historia de México, al ocupar el cargo de Presidente de México, en siete ocasiones; la primera del 5 de mayo de 1877 al 30 de noviembre de 1880. Posteriormente ocupó la presidencia para los periodos: 1884-1888, 1888-1892, 1892-1896,1896-1900,1900-1904,1904-1910. Su periodo de gobierno llevó el nombre de Porfiriato.La filosofía en que se basó el Porfiriato fue el positivismo, que predicaba el orden y la paz, pilares del gobierno porfirista, a pesar de contar con detractores, principalmente en la izquierda política. Gracias al uso del capitalismo, los ministros de Hacienda del gobierno porfirista, Manuel Dublán y José Yves Limantour pudieron lograr una avance en la economía del país.</p>
+   <img src="imagenes/porfirio.jpg" width="250" height="200">
+ </ul>
+ <h2>&nbsp;</h2>
+ <p>&nbsp;</p>
+ </div>
+ </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4>Norma Edith Ortetga Flores</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>FECHA DE LA BATALLA</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+   <p>El 9 de enero arribaron los franceses, al mando del Almirante Jurien de la Graviere, mientras que días después hizo su aparición la flota inglesa, dirigida por el Comodoro Dunlop. Como ya se mencionó, el país estaba agotado por la Guerra de Reforma y la Intervención Americana y no podía afrontar más conflictos internacionales. Pero en lugar de ceder, Benito Juárez se mantuvo firme en su resolución de mantener el decreto de suspensión de pagos. La real causa de la retirada de las flotas española e inglesa era que no se podían ver ni en pintura al lado de los franceses. El General Manuel Doblado firmó con Juan Prim, Conde de Reus, comandante en jefe de las fuerzas francesas, los Tratados Preeliminares de La Soledad, el 19 de febrero, aceptándose que las negociaciones comenzarían en Orizaba el 15 de abril. Esto hizo enojar de sobremanera a Dubois de Saligny. </p>
+   <br>
+   <p>El caso es que el 16 de abril de 1862, Prim escribía a Zaragoza que, no habiéndose puesto de acuerdo los representantes de los tres países, españoles e ingleses aceptarían los términos que Juárez decretara para con la deuda externa y se retirarían de Tehuacán y Córdoba, bases de las fuerzas aliadas, y se reembarcarían de regreso a casa. También puso en alerta a Zaragoza que los franceses comenzarían una invasión hacia la capital de la República. </p>
+   <p>El 22 de marzo ordena el fusilamiento de Manuel Robles Plezuela, detenido en Tuxtepec junto con algunos jefes conservadores, que logran escapar de las tropas del General Arteaga. Acusado de Alta Traición al buscar alianzas con los invasores, Plezuela se niega a creer que la sentencia será ejecutada, ya que piensa que a Arteaga no le convendría darle un mártir a los conservadores. Sin embargo, palidece y su esperanza desaparece cuando se entera que la orden no es de Arteaga, sino de Zaragoza. Fusilado el General Plezuela en un costado de la Iglesia de San Andrés Chalchicomula, los conservadores reúnen tropas en orden de 1,200 hombres cerca de Atlixco. El 28 de abril, en las Cumbres de Acultzingo tiene su primer encuentro con las fuerzas europeas. Zaragoza no pretende disputarle el paso al contrario, sino más bien foguear a sus soldados, faltos de experiencia, y al mismo tiempo causarle algunas pérdidas al enemigo. Las águilas napoleónicas pierden quinientos hombres, mientras las bajas mexicanas ascienden a medio centenar, entre ellos el bravo General Arteaga quien, tras haber barrido una columna francesa y llegado a solo cincuenta pasos de la reserva de Lorencez, ésta hizo fuego sobre la tropa mexicana y Arteaga cae del caballo, herido en la pierna derecha, que más tarde le sería amputada. Cumplida la misión. Zaragoza retorna con sus hombres a Ixtapa. Pelean bien los franceses afirma Zaragoza, pero los nuestros matan bien. Sin embargo, aún tiene recelo sobre la real valía de sus tropas en un combate en campo abierto. El día 2 de mayo, los galos salen de San Agustín del Palmar y llegan a Amozoc. Entre ellos y la capital sólo se encuentra la Ciudad de Puebla de los Ángeles, por donde los franceses esperan pasar entre aplausos y exclamaciones de los opositores de Juárez. Este, sin embargo, ordena que ahí se les presente batalla. 
+ El 3 de mayo Zaragoza arriba a Puebla, dejando a retaguardia de los franceses una Brigada de Caballería, a fin de hostigar al invasor. La mayoría de la población de la clerical Puebla es partidaria a la intervención, y los civiles se encierran en sus casas, mientras los batallones mexicanos desfilan marcialmente entre las desiertas calles de la Angelópolis e ingresan en sus cuarteles. Zaragoza sube a lo alto del cerro de Guadalupe y en un instante tiene ya el plan de batalla que va a seguir para la defensa de la plaza. De inmediato fortifica los reductos que se encuentran en los cerros de Loreto y Guadalupe. La guarnición cuenta tan solo con 6,700 hombres, escasamente armados, y para empeorar las cosas, la mayoría de la población, partidaria a la intervención, se niega a apoyar al ejército mexicano, peligrosamente falto de recursos. Tal es la insolencia de los poblanos que Zaragoza, hombre prudente, exclama desesperado Que bueno seria quemar Puebla. Solo lo detiene el hecho que en la ciudad también hay criaturas inocentes. El 4 de mayo, los exploradores mexicanos vuelven con noticias de que los conservadores, al mando del General Márquez se disponen a socorrer a los franceses. Zaragoza envía una brigada de dos mil hombres al mando del General Tomas O´Horan a Atlixco, con el fin de detener a Márquez, y se dispone a preparar la pelea. Organiza sus fuerzas para la defensa de la plaza con una Batería de Batalla y dos de Montaña, cubriendo Loreto y Guadalupe con 1,200 hombres, formando a los otros 3,500 en cuatro columnas, con una Batería de Campaña, tres Brigadas de Infantería y una de Caballería. </p>
+ <div>
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:100px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+ </div>
+ </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4>Norma Edith Ortega Flores</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+ </div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>DESARROLLO DE LA CONTIENDA</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <p>La Batalla de Puebla tuvo lugar el día 5 de mayo de 1862 en las inmediaciones de la ciudad de Puebla. Los bandos contendientes fueron los ejércitos de la República Mexicana, que estaban comandados por Ignacio Zaragoza, y el ejército del Segundo Imperio Francés, bajo las órdenes de Charles Ferdinand Latrille, conde de Lorencez. El resultado fue una victoria muy importante para el bando mexicano. Pero el éxito de esta conquista no logró su cometido final que era impedir la invasión de México por parte de tropas francesas sino que sólo retrasó el hecho.
+ </p>
+ <p>Motivos de la guerra</p>
+<p>En mayo de 1861, el presidente Benito Juárez anunció la suspensión de los pagos de deuda la mexicana. Como consecuencia, los acreedores que eran Francia, Inglaterra y España firmaron la conocida Convención de Londres por la cual se comprometían enviar contingentes militares hacia el territorio mexicano con el fin hacer valer los derechos como acreedores.
+En diciembre del mismo año, llegaron al puerto de Veracruz los primeros militares mientras que en enero de 1862 arribaron las tropas inglesas y francesas. Una vez en el país, los representantes de los tres países acreedores enviaron un ultimátum al gobierno de México exigiéndole el pago de las deudas ya que de lo contrario invadirían el país. Juárez, al ver que la invasión era un riesgo evidente, solicitó negociar para llegar a un acuerdo amistoso al tiempo que derogó el decreto que llevó a los países acreedores a iniciar acciones militares.
+El presidente Juárez viendo la posibilidad de una invasión militar a la Ciudad de México ordenó la fortificación de Puebla al mismo tiempo que creó una nueva unidad militar conocida como Ejército de Oriente. Esta en un principio estuvo bajo las órdenes de José López Uraga pero debido a su mal desempeño el mando recayó en las manos del hasta entonces Ministro de Guerra, Zaragoza. Él tuvo la tarea de organizar las fuerzas, que sumaban unos 10.000 hombres, para repeler el ataque del ejército francés.Los representantes de los países acreedores aceptaron la propuesta de negociación y en febrero de 1862 se reunieron con los ministros Manuel Doblado (Mtro. De Exterior) e Ignacio Zaragoza (Mtro. de Guerra). La reunión se llevó a cabo en la hacienda La Soledad muy próxima a Veracruz. Esta negociación derivó en la firma de los Tratados preliminares de La Soledad mediante los cuales España, Francia e Inglaterra se comprometían a reconocer la independencia del país. En cuanto a la deuda, se aceptó que las negociaciones se realizasen en Orizaba, Córdoba y Tehuacán. En caso de no llegar a un acuerdo, se comenzarían las campañas militares desde las costas.
+Invasión francesa: El día 5 de marzo, a pesar que las negociaciones continuaban, llegó a Veracruz un contingente francés que bajo el mando de Latrille se dirigió hacia Tehuacán. A estas fuerzas, se le unieron las del general conservador Juan Nepomuceno Almonte, quien se autoproclamó "jefe supremo de la nación" y reunió tropas conservadoras para apoyar a los franceses.
+En abril del mismo año, España e Inglaterra al ver que Francia utilizaba como pretexto la deuda como forma de invadir México para adicionarlo como colonias rompieron la alianza con dicho país y otorgaron una moratoria al gobierno Juarista para el pago de la deuda y retiraron sus tropas del territorio mexicano.Los intereses meramente invasores de Francia, que contrastaban con los intereses de España e Inglaterra que solo querían llegar a un acuerdo para el cobro de la deuda quedaron en mayor evidencia.Francia no sólo exigía el pago inmediato de la deuda sino que también buscaba el control absoluto de las aduanas a la vez que deseaba tener poder directo sobre la política económica del país.
+A fines de abril, el general francés Lorencez desoyendo los tratados de La Soledad comenzó la campaña de invasión y dirigió sus fuerzas hacia Puebla con el objetivo, de llegar a la Ciudad de México y dominarla.Los franceses con la moral muy alta, dado que no perdían una contienda bélica desde hacía cerca de 50 años (Waterloo) avanzaron hacia Puebla. Esta gran confianza que se tenían no sólo se debía a sus éxitos militares sino que la organización militar del bando mexicano era muy incipiente además de existir entre ellos, divisiones debido a cuestiones políticas.
+<h2>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/imagen16.jpg',1)"><img src="imagenes/imagen11.jpg" width="250" height="200" id="Image16"></a> 
+</h2>
+ </div>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <h4>Norma Edith Ortega Flores</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ </div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>DONDE SE LLEVO A CABO</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/imagen9.jpg',1)"><img src="imagenes/imagen15.jpg" width="250" height="200" id="Image17"></a>
+<p>La batalla de Puebla fue un combate librado el 5 de mayode 1862 en las cercanías de la ciudad de Puebla, entre los ejércitos de la República Mexicana, bajo el mando de Ignacio Zaragoza, y del Segundo Imperio Francés, dirigido porCharles Ferdinand Latrille, conde de Lorencez, durante laSegunda Intervención Francesa en México, cuyo resultado fue una victoria importante para los mexicanos ya que con unas fuerzas consideradas como inferiores lograron vencer a uno de los ejércitos más experimentados y respetados de su época. Pese a su éxito, la batalla no impidió la invasión del país, sólo la retrasó, sin embargo, sería la primera batalla de una guerra que finalmente México ganaría. Los franceses regresarían al siguiente año, con lo que se libró una segunda batalla en Puebla en la que se enfrentaron 35 000 franceses contra 29 000 mexicanos (defensa que duró 62 días), y lograrían avanzar hasta la Ciudad de México, lo que permitió establecer el Segundo Imperio Mexicano.Finalmente, ante la incapacidad de consolidar un imperio y después de perder 11 000 hombres debido a la actividad guerrillera que nunca dejó de subsistir,1 los franceses se retiraron incondicionalmente del país en el año de1867.
+  <br>
+ </p>
+ </div>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <h4>Norma Edith Ortega Flores</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>CULMINACION DE LA BATALLA</h1>
+ </div>
+<center> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/fuertelorygu.jpg',1)"><img src="imagenes/imagen9.jpg" width="250" height="200" id="Image"></a></center>
+<p>El enemigo ya derrotado, temía una arremetida final de las tropas mexicanas, razón por la que se organizó defensivamente en la hacienda Rementería. No sintiendo seguro ese lugar y ante la cercanía de los cuerpos mexicanos deseosos de consolidar la victoria, el General Lorencez ordenó cambiarse al rancho San José, manteniendo por igual las mismas precauciones, para evitar ser sorprendidos. El 5 de mayo de 1862, las mieles de la victoria que tanto se habían negado al soldado mexicano, fueron saboreadas hasta la saciedad. Muchos años de abstinencia llegaban a su fin, y lo más importante, el triunfo logrado sobre los mejores soldados de aquel momento, levantó el orgullo militar mexicano, severamente lastimado en la guerra contra los E.U.A., en 1847. El enemigo, imposibilitado para reiniciar nuevas operaciones ofensivas, se retiró a Orizaba en espera de refuerzos. El General Lorencez sería relevado del mando, suceso con el que se abriría otra faceta de la aventura de Napoleón III en México, quien para sostener su proyecto intervencionista, hubo de someter a su ejército a exigencias cada vez crecientes, en respuesta del mexicano, que nunca aceptó la forma de gobierno impuesta. El triunfo del 5 de mayo de 1862 se convirtió en la página de oro de nuestra historia militar y también, la muestra de la capacidad de un pueblo, que conjuntó esfuerzos y voluntades, para transformarse en guerrero, que arrebató la victoria a cuerpos de élite y veteranos de los campos de guerra en Europa, quienes poseedores de una tradición, tuvieron que reconocer el valor y la calidad del soldado mexicano, en un momento sublim.</p>
+<p><a href="http://www.5demayopuebla.mx/historia.phpe">http://www.udg.mx/es/efemerides/05-mayo</a></p>
+<p>&nbsp;</p>
+</div>
+</div>
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <h4>Norma Edith Ortega Flores</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+  </div>
+</div>
+ </div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>EN LA ACTRUALIDAD AHORA QUE SON LOS FUERTES</h1>
+  </div>
+ <center> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/imagen8.jpg',1)"><img src="imagenes/museo.jpg" width="250" height="200" id="Image2"></a></center>
+<div>
+    <p>En los fuertes de Loreto y Guadalupe, en Puebla, tuvo lugar un hecho histórico: un pequeño ejército mexicano derrotó a los franceses, dando a los mexicanos un motivo para celebrar durante años. Este acontecimiento ocurrió el cinco de mayo de 1862, cuando el ejército invasor francés fue abatido por un batallón mexicano en una proporción de dos a uno. Los fuertes donde ocurrieron tales batallas hoy pertenecen al Centro Cívico Cinco de Mayo, y pueden ser visitados en las afueras de la ciudad.Aunque el ejército mexicano fue finalmente derrotado, la Batalla de Puebla es un símbolo de unidad y patriotismo para los mexicanos. Con esa victoria, México le demostró al mundo que las naciones latinoamericanas eran autónomas y capaces de resistir los embates imperialistas que buscaban conquistar el mundo. La celebración del triunfo se lleva a cabo cada año en todo México e incluso en Estados Unidos (especialmente entre la comunidad chicana).Ahora restaurados, los fuertes de Loreto y Guadalupe pueden recorrerse en compañía de un guía, quien recreará con gran detalle la gloria militar. Ambos se encuentran dentro del Centro Cívico Cinco de Mayo, al noreste de la ciudad. Este centro también alberga un planetario, el Museo de Arqueología Regional, el estadio olímpico de fútbol, un auditorio y una enorme extensión de áreas verdes.Dentro de este recinto también se asienta el museo interactivo Imagina, un lugar donde los niños pueden aprender, experimentar, explicar y sentir. Aquí, el aprendizaje se refuerza con juegos y actividades.Por último, el museo regional del Instituto Nacional de Antropología e Historia (INAH) se divide en tres secciones: la biblioteca, la sala dedicada al artista plástico Diego Rivera y un complejo donde podrás acercarte a la historia de Puebla. Una de sus piezas más interesantes es la colosal escultura de San Cristóbal, que data del siglo XVII. </p>
+  </div>
+</div>
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <h4>Norma Edith Ortega Flores</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+</div>
+</div>
+</div>
+</body>
+ </html>
